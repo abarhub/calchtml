@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculatrice</title>
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/smoothness/jquery-ui.css" />
+</head>
+<body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script>
+    jQuery(document).ready(function($){
+    $("#datepicker").datepicker();
+});
+ $(function() {
+$( "input[type=submit], a, button" )
+.button()
+.click(function( event ) {
+event.preventDefault();
+});
+});
+</script>
+<form>
+
+    <input type="text" id="datepicker">
+</form>
+<hr/>
+<button>1</button><button>2</button><button>3</button><br/>
+<button>4</button><button>5</button><button>6</button><br/>
+<button>7</button><button>8</button><button>9</button><br/>
+<button>.</button><button>0</button><button>3</button><br/>
+
+</body>
+</html>
